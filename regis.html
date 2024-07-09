@@ -1,0 +1,70 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="bootstrap.css">
+			<link rel="stylesheet" href="style.css">
+			<meta charset="utf-8">
+			<title>Registro</title>
+
+		</head>
+		<body>
+			<div class="container">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">
+							<h2><b><i>
+								Registro
+							</i></b></h2>
+						</div>
+					</div>
+					<div class="card-body">
+						<form method="post" action="val_regis.php" class="form-group">
+							<label class="form-label" for="Usu">
+								Usuario:
+							</label>
+							<input type="text" name="usu" id="usu" class="form-control" placeholder="Ingrese su usuario" required>
+							<br>
+
+							<label class="form-label" for="Contra">Contraseña:</label>
+							<input type="password" name="contra" id="contra" class="form-control" placeholder="Ingrese su contraseña" required>
+
+							<br>
+							
+							<label class="form-label"  for="Nombre">Nombre:</label>
+							<input type="text" name="nombre" onkeypress="validarLetras(event);" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+							<br>
+							
+							<label class="form-label" for="Apellido">Apellido:</label>
+							<input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+
+
+							<br>
+							
+							<label class="form-label" for="Edad">Edad:</label>
+							<input type="text" name="edad" maxlength="100" onkeypress="validarEdad(event);" id="edad" class="form-control" placeholder="Ingrese su edad" required>
+
+							<br>
+							
+							<label class="form-label" for="Cedula">Cedula:</label>
+							<input type="text" name="ced" onkeypress="validarCed(event);" id="ced" class="form-control" placeholder="Ingrese su cedula" required>
+							<br>
+
+
+							<div class="row">
+								<div class="col">
+									<button class="btn btn-success">Registrar</button>
+								</div>
+								<div class="col">
+									<p>Tiene cuenta?</p>
+									<a href="index.html">Ingresar!</a>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		<script type="text/javascript" src="script.js"></script>
+
+		</body>
+	</html>

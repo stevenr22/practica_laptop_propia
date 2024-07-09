@@ -1,0 +1,45 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="bootstrap.css">
+			<link rel="stylesheet" href="style.css">
+			<meta charset="utf-8">
+			<title>Login</title>
+		</head>
+		<body>
+			<div class="container">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">
+							<h2><b><i>
+								Login
+							</i></b></h2>
+						</div>
+					</div>
+					<div class="card-body">
+						<form method="post" action="val_login.php" class="form-group">
+							<label class="form-label" for="Usu">
+								Usuario:
+							</label>
+							<input type="text" name="usu" id="usu" class="form-control" placeholder="Ingrese su usuario" required>
+							<br>
+							<label class="form-label" for="Contra">Contraseña:</label>
+							<input type="password" name="contra" id="contra" class="form-control" placeholder="Ingrese su contraseña" required>
+							<br>
+							<div class="row">
+								<div class="col">
+									<button class="btn btn-success">Ingresar</button>
+								</div>
+								<div class="col">
+									<p>No tiene cuenta?</p>
+									<a href="regis.html">Registrar!</a>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+			
+		</body>
+	</html>
